@@ -1,0 +1,750 @@
+body,ul,h2,h4,h3,p,h1,input,button{
+  margin: 0;
+  padding: 0;
+}
+img{
+  border: 0;
+}
+body{
+  font-family: "微软雅黑";
+}
+.reco-con, .song_con, .bri_con, .rank_con,.foot_con,.head_con,.movie_con {
+  width: 1200px;
+  margin: 0 auto;
+}
+.tit {
+  font-size: 30px;
+  color: #333;
+  letter-spacing: 14px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 34px;
+}
+
+ul,li {
+  list-style: none;
+
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+.song-reco, .new_song, .brilliant, .new_disc, .rank, .foot , .movie{
+
+  padding: 51px 0px 50px 0px;
+}
+.reco-list {
+  overflow: hidden;
+
+}
+.reco-list li {
+  width: 224px;
+  float: left;
+  margin-right: 20px;
+}
+.reco-list .nomargin{
+  margin-right: 0px;
+}
+
+.list_pic img {
+  width:224px  ;
+  vertical-align: top;
+
+}
+
+.play_name:hover .ico_play {
+  background-image: url("img/player/ico_play.png");
+
+
+}
+.ico_play {
+  position: absolute;
+  margin: 82px 82px;
+  width: 60px;
+  height: 60px;
+}
+
+.list_tit {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 28px;
+  margin-top: 6px;
+}
+/*新歌首发*/
+.tab {
+  overflow: hidden;
+  padding-left: 360px;
+  margin-bottom: 39px;
+}
+.tab a{
+  font-size: 14px;
+  line-height: 22px;
+  float: left;
+  margin-right: 52px;
+}
+/*新碟首发*/
+
+.disc_con{
+  width: 1200px;
+  margin: 0 auto;
+}
+.new_disc .tab {
+  padding-left: 350px;
+  margin-bottom: 39px;
+}
+.song_list {
+  overflow: hidden;
+}
+.song_list li {
+  padding: 12px 0px;
+  overflow: hidden;
+  border-bottom:  1px solid #f2f2f2;
+  width: 380px;
+  float: left;
+  margin-right: 30px;
+
+}
+.pic,.txt,.time{
+  float: left;
+}
+.pic{
+  width: 86px;
+  height: 86px;
+
+}
+
+.pic img {
+  width: 86px;
+
+}
+.txt {
+  padding: 19px 0px 17px 0px;
+  width: 200px;
+  margin: 0px 38px 0px 14px;
+}
+.txt h3 {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: normal;
+  text-overflow: ellipsis;  /* 单行文本 */
+  overflow: hidden;  /* 溢出隐藏、清除浮动、解决外边距塌陷等等；这里是溢出隐藏 */
+  white-space: nowrap;  /* 规定h3标签不换行 */
+}
+.txt p{
+  font-size: 14px;
+  line-height: 25px
+}
+.txt p a{
+  color: #999;
+}
+.time{
+  font-size: 14px;
+  color: #999;
+  line-height: 86px;
+}
+.song_list .nomargin{
+  margin-right: 0px;
+}
+/*精彩推荐*/
+.bri_list  {
+  overflow: hidden;
+}
+.bri_list  li {
+  width: 590px;
+  height: 235px;
+  float: left;
+
+}
+.bri_list .flo_rig{
+  float: right;
+}
+.bri_list li img{
+  width: 590px;
+}
+
+/*新碟首发*/
+.disc_list{
+  overflow: hidden;
+}
+.disc_list li {
+  width: 210px;
+  height: 280px;
+  float: left;
+  margin-right: 30px;
+}
+
+.play_pic{
+  width: 210px;
+  height: 210px;
+
+}
+.play_pic img{
+  width: 210px;
+}
+.playlist_item {
+  width:240px ;
+  height:300px;
+  padding-bottom: 15px;
+}
+/*.playlist_item .play_pic {*/
+/*  position: relative;*/
+/*  !*margin-right: 30px;*!*/
+/*}*/
+
+.playlist_item .playlist_title{
+  /*float: left;*/
+  max-width: 100%;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22px;
+  max-height: 44px;
+}
+.playlist_title h4{
+  margin-top: 4px;
+
+}
+
+
+.playlist_title_txt a {
+  font-size: 14px;
+}
+.playlist_item .playlist_author{
+
+  max-width: 100%;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 22px;
+  max-height: 44px;
+}
+.playlist_item .playlist_author a {
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 22px;
+  font-size: 14px;
+}
+
+/*排行榜*/
+.rank_list {
+  overflow: hidden;
+}
+.list_item {
+  width: 164px;
+  height: 430px;
+  margin-right: 20px;
+  float: left;
+  /*精灵图，通过background-position调整图片对应位置*/
+  /*no-repeat属性是不让图片重复*/
+  background: url(img/rank/rank.png) no-repeat;
+  padding: 70px 30px 0px;
+}
+
+.two{
+  background-position: -309px 0px ;
+}
+.three{
+  background-position: -618px 0px ;
+}
+.four{
+  background-position: -927px 0px ;
+}.five{
+   background-position: -1238px 0px ;
+ }
+
+.rank_list .nomargin {
+  margin-right: 0px;
+}
+.list_item h3{
+  font-size: 26px;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.list_item i {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #fff;
+  margin: 32px auto;
+}
+.item_del li {
+  font-size: 13px;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.item_del .num {
+  line-height: 29px;
+  float: left;
+  width: 20px;
+}
+.item_del .del_txt{
+  float: left;
+  width: 144px;
+}
+.del_txt p{
+  line-height: 29px;
+  text-overflow: ellipsis;
+  overflow: hidden;  /* 溢出隐藏、清除浮动、解决外边距塌陷等等；这里是溢出隐藏 */
+  white-space: nowrap
+}
+.del_txt p a{
+  color: #fff;
+}
+.del_txt p a:hover{
+  color: #fff;
+}
+
+/*底部*/
+.foot {
+  background: rgb(58,58,58);
+}
+.foot a{
+  color: #999;
+  display: block;
+}
+.bt {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 77px;
+  margin-bottom: 12px;
+}
+.down_list {
+  overflow: hidden;
+}
+.down_item {
+  float: left;
+}
+.down_item i {
+  display: block;
+  background: url("img/foot/foot.png") no-repeat;
+  margin: 0px 29px;
+  height: 33px;
+}
+.item01 {
+  margin-left: -23px;
+}
+.item01 i{
+  width: 33px;
+  background-position: -1px -1px;
+}
+.item01 a:hover i{
+  background-position: -1px -34px;
+}
+.item02 i{
+  width: 41px;
+  background-position: -56px -1px;
+}
+.item02 a:hover i{
+  background-position: -56px -34px;
+}
+.item03 i{
+  width: 36px;
+  background-position: -130px -1px;
+}
+.item03 a:hover i{
+  background-position: -130px -34px;
+}
+.item04 i{
+  width: 36px;
+  background-position: -190px -1px;
+}
+
+.item04 a:hover i{
+  background-position: -190px -34px;
+}
+.download{
+  width: 438px;
+}
+.pro {
+  width: 370px;
+  margin-right: 80px;
+}
+.down_item span {
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+
+}
+.con_top{
+  overflow: hidden;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #353535;
+}
+.download,.pro {
+  float: left;
+}
+.pro .item01 {
+  margin-left: -24px;
+}
+.pro .item01 i{
+  width: 38px;
+  height: 32px;
+  background-position: -249px -3px;
+}
+.item01 a:hover i {
+  background-position: -249px -34px;
+}
+.pro .item02 i{
+  width: 38px;
+  height: 32px;
+  background-position: -314px -3px;
+}
+.item02 a:hover i {
+  background-position: -314px -34px;
+}
+.pro .item03 i{
+  width: 38px;
+  height: 32px;
+  background-position: -380px -3px;
+}
+.item03 a:hover i {
+  background-position: -380px -34px;
+}
+.pro .item04 i{
+  width: 38px;
+  height: 32px;
+  background-position: -443px -3px;
+}
+.item04 a:hover i {
+  background-position: -443px -34px;
+}
+.item_spec{
+  margin-right:33px;
+}
+/*合作链接*/
+.link{
+  width: 303px;
+  float: left;
+
+}
+.link_list li{
+  font-size: 14px;
+  margin-bottom: 18px;
+  line-height: 14px;
+  min-width: 101px;
+  float: left;
+}
+.link_list li a:hover{
+  color: #31c27c;
+}
+.platform {
+  width: 464px;
+  float: left;
+  margin-top:52px ;
+
+}
+.platform li {
+  margin-right: 30px;
+}
+.copyright{
+  font-size: 12px;
+  color: #999;
+  padding-top: 23px;
+}
+.copyright p {
+  line-height: 20px;
+  text-align: center;
+}
+.copyright p a{
+  display: inline;
+}
+.copyright p a:hover{
+  color: #31c27c;
+}
+/*头部*/
+.head_con {
+  position: relative;
+  padding-top: 90px;
+
+}
+.logo {
+  width: 170px;
+  height:46px;
+  position: absolute;
+  left: 0;
+  top:22px;
+}
+.logo a{
+  display: block;
+}
+.logo img{
+  width: 170px;
+}
+.top_list {
+  font-size: 18px;
+  overflow: hidden;
+  position: absolute;
+  left: 198px;
+  top:0px;
+}
+.top_list li {
+  float: left;
+}
+.top_list .current{
+  background: #31c27c;
+}
+.top_list .current a {
+  color: #fff;
+}
+.top_list .current a:hover {
+  color: #fff;
+}
+.top_list a{
+  color: #000;
+  display: block;
+  line-height:90px ;
+  padding: 0px 20px;
+}
+.top_list a:hover {
+  color:#31c27c ;
+}
+.spec {
+  position: relative;
+}
+.spec img{
+  position: absolute;
+  top:18px;
+  left: 56px;
+  width: 38px;
+  height: 14px;
+}
+
+.head_search{
+  width: 218px;
+  height: 36px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  position: absolute;
+  left: 720px;
+  top:26px
+}
+.sear_input{
+  padding-left: 11px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  width: 174px;
+  float: left;
+}
+.sear_input::placeholder{
+  color: #757575;
+  font-size: 10px;
+}
+button i{
+  width: 17px;
+  height: 17px;
+  display: block;
+  background: url("img/head/mark-2.png") no-repeat;
+  margin-left: 6px;
+}
+button {
+  background: none;
+  border: none;
+  width: 33px;
+  height: 36px;
+  float: right;
+}
+button:hover i{
+  background: url("img/head/mark-3.png");
+}
+.head_right{
+  height: 40px;
+  position: absolute;
+  left: 980px;
+  top:24px
+}
+.head_right a{
+  display: block;
+  float: left;
+}
+.land{
+  font-size: 16px;
+  color: #000;
+  line-height: 40px;
+}
+.open_v {
+  font-size: 12px;
+  color: #fff;
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  background: #31c27c;
+  border-radius: 2px;
+  text-align: center;
+  margin: 0px 5px 0px 8px;
+  position: relative;
+}
+/*通过伪类，border设置小箭头*/
+.open_v::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #fff;
+  position: absolute;
+  top:16px;
+  right: 8px;
+}
+.recharge{
+  width: 51px;
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  line-height: 38px;
+  position: relative;
+}
+.recharge::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #000;
+  position: absolute;
+  top:14px;
+  right: 2px;
+}
+.subnav {
+  overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+  padding-left: 230px;
+}
+/*.subnav {*/
+/*  overflow: hidden;*/
+/*}*/
+.subnav li {
+  line-height: 51px;
+  height: 51px;
+  font-size: 14px;
+  float: left;
+}
+.subnav a{
+  color: #000;
+  display: block;
+  line-height: 50px;
+  padding: 0px 20px;
+}
+.subnav li a:hover {
+  color: #31c27c;
+}
+.song-reco, .new_song,.brilliant,.new_disc,.rank,.movie {
+  background: url("img/background02.jpg") repeat-x;
+}
+/*MV*/
+.movie_tab{
+  overflow: hidden;
+  padding-left: 350px;
+  margin-bottom: 39px;
+  position: relative;
+
+}
+/*.movie_con{*/
+/*  position: relative;*/
+/*}*/
+.movie_tab a{
+  font-size: 14px;
+  line-height: 22px;
+  float: left;
+  margin-right: 52px;
+
+}
+.movie_tab a:hover{
+  color: #31c27c;
+}
+
+.index_more{
+  position: absolute;
+  right: 0;
+  top: auto;
+}
+/*.index_more i:hover{*/
+/*  background-position: -120px -60px;*/
+/*}*/
+.movie_tab .index_more a:hover i{
+  background-position: -120px -60px;
+}
+.icon_index_arrow{
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background-position: -120px -40px;
+  margin-left: 6px;
+}
+.sprite {
+  background-image: url(img/icon_sprite.630b3e60.png);
+}
+.check:hover i{
+  background-position: -120px -60px;
+}
+
+.movie_list{
+  overflow: hidden;
+}
+.movie_list li{
+  width: 224px;
+  height: 210px;
+
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 20px;
+}
+.movie_list li img{
+  width: 224px;
+  height: 127px;
+}
+.movie_list .nomargin{
+  margin-right: 0px;
+}
+.movie_list_title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.movie_list_singer{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+.movie_list_listen_icon{
+  display: inline-block;
+  width: 19px;
+  height: 12px;
+  background-position: -180px -20px;
+  vertical-align: -1px;
+}
+.movie_list_info span{
+  margin:0px 10px 0px 0px;
+}
+.movie_list_listen_icon sprite{
+  background-image:  url(img/icon_sprite.630b3e60.png);
+}
+.movie_list_info i{
+  font-size: 14px;
+  color: #9b9b9b;
+}
+.movie_list_title:hover{
+  color: #31c27c;
+}
+.movie_list_singer:hover{
+  color: #31c27c;
+}
